@@ -10,17 +10,17 @@
 
 ## 依赖
 ***Chrome 浏览器 (76)***
-bs4 (BeautifulSoup)
+  bs4 (BeautifulSoup)
 
-lxml
+  lxml
 
-selenium
+  selenium
 
-requests
+  requests
 
-mitmproxy   *可选*
+  mitmproxy   *可选*
 
-clipboard   *可选*
+  clipboard   *可选*
 
 *本git带 Windows/Linux/macOS 的 chromedriver 76*
 
