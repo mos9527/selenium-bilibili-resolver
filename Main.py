@@ -2,7 +2,7 @@
 @Description: Main program which does main things.RUN THIS!
 @Author: greats3an
 @Date: 2019-08-24 17:54:27
-@LastEditTime: 2019-09-01 07:09:18
+@LastEditTime: 2019-09-01 10:26:24
 @LastEditors: greats3an
 @Notes: The files were downloaded to ./bilibili/ by default
 '''
@@ -126,7 +126,7 @@ def resolve_and_download(driver, vid, cookies):
 logger = Logger.Logger(((24, "Download Chart"), (24, "Debug Output")))
 log = lambda *x: logger.log(*x, bufferindex=1)
 # 调试输出，输出至缓冲区1
-downloader_sheet = CLISheet.CreateSheet(("ID", 3), ("STAT", 4), ("URL", 10), (
+downloader_sheet = CLISheet.CreateSheet(("ID", 3), ("STAT", 5), ("URL", 10), (
     "PATH", 10), ("SIZE", 10), ("CURR", 10), ("%", 5), ("MESSAGE", 20), filler=' ')
 for i in range(1, max_downloads + 1):
     downloader_sheet.add_line(("ID", i))
@@ -160,6 +160,7 @@ if __name__ == "__main__":
         if(availablity[0] < 2 or availablity[1] > 0):
             log("\033[31mDownloader is BUSY,Waiting...\033[0m")
         while(availablity[0] < 2 or availablity[1] > 0):
+            availablity = qd.get_availability()
             time.sleep(1)
         # 等待下载端资源充裕
 

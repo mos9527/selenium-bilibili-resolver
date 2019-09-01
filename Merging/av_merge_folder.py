@@ -2,7 +2,7 @@
 @Author: greats3an
 @Date: 2019-08-25 07:57:37
 @LastEditors: greats3an
-@LastEditTime: 2019-09-01 06:53:45
+@LastEditTime: 2019-09-01 10:32:33
 @Description: file content
 '''
 '''Deprecated!'''
@@ -44,7 +44,7 @@ for av in avlist:
         #旧视频，单个文件
         cmd = ("ffmpeg -y -i \"" + av["video"]+"\" -c:v copy -c:a copy \""+out_file+"\"")
         print("Executing:\n    ", cmd)
-        input("Press any key to proceed.")
+        #input("Press any key to proceed.")
         os.system(cmd)
         pass
     else:
@@ -52,7 +52,7 @@ for av in avlist:
         cmd = ("ffmpeg -y -i \""+av["video"]+"\" -i \"" +
                av["audio"]+"\" -c:v copy -c:a copy \""+out_file+"\"")
         print("Executing:\n    ", cmd)
-        input("Press any key to proceed.")
+        #input("Press any key to proceed.")
         os.system(cmd)
         pass
 

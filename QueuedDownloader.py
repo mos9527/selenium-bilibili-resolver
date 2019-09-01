@@ -2,7 +2,7 @@
 @Author: greats3an
 @Date: 2019-08-24 18:48:46
 @LastEditors: greats3an
-@LastEditTime: 2019-09-01 07:10:16
+@LastEditTime: 2019-09-01 10:25:40
 @Description: Mutil-threaded file downloader in pure python
 '''
 
@@ -47,7 +47,7 @@ class QDStatus():
     @param code
     @return: Translated status-text
     '''
-    def translate(self,code):return {self.STAT_INPROGRESS:"下载中",self.STAT_OK:"已完成",self.STAT_FILEERROR:"文件错误",self.STAT_OVERWRITEN:"已覆盖",self.STAT_REJECTED:"拒绝连接",self.STAT_UNKNOWN_ERR:"未知错误"}[code]
+    def translate(self,code):return {self.STAT_INPROGRESS:"DOWN.",self.STAT_OK:"OKAY.",self.STAT_FILEERROR:"FILE!",self.STAT_OVERWRITEN:"OVERW",self.STAT_REJECTED:"REFUSE",self.STAT_UNKNOWN_ERR:"ERROR"}[code]
 
 class QDUtils():
     '''
