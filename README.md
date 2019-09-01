@@ -3,13 +3,13 @@
 
 ## 依赖
 ### ***Chrome 浏览器 (76)***
-### **bs4 (BeautifulSoup)
+### bs4 (BeautifulSoup)
 ### lxml
 ### selenium
-### requests**
+### requests
 ### mitmproxy   *可选*
 ### clipboard   *可选*
-### *本git带 Windows/Linux/macOS 的 chromedriver 76*
+#### *本git带 Windows/Linux/macOS 的 chromedriver 76*
 
 ## 设定
 ### 编辑Main.py的 SETTINGS 区域(Region)，可编辑的有:
