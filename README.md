@@ -26,18 +26,18 @@ clipboard   *可选*
 
 
 ## 设定
-### 编辑Main.py的 SETTINGS 区域(Region)，可编辑的有:
-    **cookies** 用 *DeliciousCookie.py* 获得Cookies后粘贴至此 *(可选：视频清晰度会受影响)*
+### 编辑Main.py开头部分SETTINGS内变量，可编辑的有:
+    cookies 用 DeliciousCookie.py 获得Cookies后粘贴至此 (可选：视频清晰度会受影响)
 
-    **download_path** 下载目录，用 *@local* 代替程序运行目录
+    download_path 下载目录，用 @local 代替程序运行目录
     
-    **max_downloads** 最大同时下载数
+    max_downloads 最大同时下载数
 
-    **chunk_size** 下载区块大小
+    chunk_size 下载区块大小
 
-    ***vids*** 所有要解析的视频ID,格式如['av#####','ep#####']
+    vids 所有要解析的视频ID,格式如['av#####','ep#####']
 
-    **in_folder** 是否将视频存放在单独的文件夹内（分P推荐打开)
+    in_folder 是否将视频存放在单独的文件夹内（分P推荐打开)
 
 
 ## 注意
