@@ -10,17 +10,20 @@
 
 ## 依赖
 ***Chrome 浏览器 (76)***
-  bs4 (BeautifulSoup)
 
-  lxml
+    BeautifulSoup(bs4)
 
-  selenium
+    lxml
 
-  requests
+    selenium
 
-  mitmproxy   *可选*
+    requests
 
-  clipboard   *可选*
+    mitmproxy   *可选*
+
+    clipboard   *可选*
+
+运行 '''pip3 install -r Dependencies.txt''' 安装上述依赖
 
 *本git带 Windows/Linux/macOS 的 chromedriver 76*
 
