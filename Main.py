@@ -2,7 +2,7 @@
 @Description: Main program which does main things.RUN THIS!
 @Author: greats3an
 @Date: 2019-08-24 17:54:27
-@LastEditTime: 2019-09-01 10:26:24
+@LastEditTime: 2019-09-01 10:38:56
 @LastEditors: greats3an
 @Notes: The files were downloaded to ./bilibili/ by default
 '''
@@ -30,22 +30,14 @@ import QueuedDownloader
 
 # region SETTINGS
 # 用DeliciousCookie.py取得该cookie
-cookies = [{"domain": "bilibili.com", "expiry": 1569561243.243146, "httpOnly": False, "name": "bili_jct", "path": "/", "secure": False, "value": "2c4d12e0e032f4bad18e21c8b20953b4"},
-           {"domain": "bilibili.com", "expiry": 1569561243.24309,  "httpOnly": True, "name": "SESSDATA", "path": "/", "secure": False, "value": "2e734f5f%2C1569561243%2C15786a81"},
-           {"domain": "bilibili.com", "expiry": 1569561243.242952, "httpOnly": False,"name": "DedeUserID", "path": "/", "secure": False, "value": "413116982"},
-           {"domain": "bilibili.com", "expiry": 1598505218.373915, "httpOnly": False, "name": "sid", "path": "/", "secure": False, "value": "jl69639b"}, 
-           {"domain": "bilibili.com", "expiry": 2177452799.391342, "httpOnly": False, "name": "LIVE_BUVID", "path": "/", "secure": False, "value": "AUTO1615669692093992"}, 
-           {"domain": "bilibili.com", "expiry": 1661577208.819615, "httpOnly": False, "name": "buvid3", "path": "/", "secure": False, "value": "7D811955-0A40-4FFB-A051-6064ED8C78F8155835infoc"},
-           {"domain": "bilibili.com", "expiry": 1569561243.243032, "httpOnly": False, "name": "DedeUserID__ckMd5", "path": "/", "secure": False, "value": "1a099be8cd5285f0"},
-           {"domain": "bilibili.com", "expiry": 1598505208, "httpOnly": False, "name": "_uuid", "path": "/", "secure": False, "value": "ECAD9BCE-811A-8687-8E24-35E5165A31CA08738infoc"}]
-# 下载路径，用@local替代程序路径
+cookies = []# 下载路径，用@local替代程序路径
 download_path = "@local/bilibili/"
 # 最大同时下载数
 max_downloads = 8
 # 下载分块大小
 chunk_size = 10 * 1024  #分10KB一块
 # 所有要解析的视频id e.g.['av######','av######']
-vids = ['av28575443', 'av47994805']
+vids = []
 #下载的视频是否在单独的文件夹内（分P请启用）
 in_folder = True
 # endregion
