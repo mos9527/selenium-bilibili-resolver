@@ -23,7 +23,7 @@
 
     clipboard   *可选*
 
-运行 '''pip3 install -r Dependencies.txt''' 安装上述依赖
+运行 'pip3 install -r Dependencies.txt' 安装上述依赖
 
 *本git带 Windows/Linux/macOS 的 chromedriver 76*
 
@@ -38,7 +38,7 @@
 
     chunk_size 下载区块大小
 
-    vids 所有要解析的视频ID,格式如['av#####','ep#####']
+    vids 所有要解析的视频ID,格式如['av12345','ep12345']
 
     in_folder 是否将视频存放在单独的文件夹内（分P推荐打开)
 
@@ -46,7 +46,7 @@
 ## 注意
     b站现将新视频音视频分离，下载后，推荐运行 *Merging/av_merge_folder.py (in_folder 为 True） 或 av_merge_nofolder.py* 合并 
     
-    番剧类(ss#####),图文类(cv#####)不能解析。番剧可用 *Videolisting/web_cathcer.py* 手动获取视频(ep#####)ID后输入*Main.py*
+    番剧类(ss12345)(cv12345)不能解析。番剧可用 *Videolisting/web_cathcer.py* 手动获取视频(e.g.ep12345)ID后输入*Main.py*
 
 ---
 ## 截图
