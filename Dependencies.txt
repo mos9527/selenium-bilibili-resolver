@@ -1,0 +1,8 @@
+#To install,execute pip3 install -r Dependencies.txt
+#This script only works on Python3
+bs4
+lxml
+selenium
+requests
+mitmproxy
+clipboard
